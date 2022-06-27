@@ -23,8 +23,8 @@ public class Tail {
 
     @Column(name = "owner")
     private String owner;
-    @Column(name = "tail_colour")
-    private String tailColour;
+    @Column(name = "tail_color")
+    private String tailColor;
     @Column(name = "tail_length")
     private String tailLength;
 

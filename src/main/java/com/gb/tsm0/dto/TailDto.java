@@ -3,7 +3,7 @@ package com.gb.tsm0.dto;
 public class TailDto {
     public Long id;
     private String owner;
-    private String tailColour;
+    private String tailColor;
     private String tailLength;
 
     public long getId() {
@@ -22,12 +22,12 @@ public class TailDto {
         this.owner = owner;
     }
 
-    public String getTailColour() {
-        return tailColour;
+    public String getTailColor() {
+        return tailColor;
     }
 
-    public void setTailColour(String tailColour) {
-        this.tailColour = tailColour;
+    public void setTailColor(String tailColor) {
+        this.tailColor = tailColor;
     }
 
     public String getTailLength() {
@@ -38,10 +38,10 @@ public class TailDto {
         this.tailLength = tailLength;
     }
 
-    public TailDto(long id, String owner, String tailColour, String tailLength) {
+    public TailDto(long id, String owner, String tailColor, String tailLength) {
         this.id = id;
         this.owner = owner;
-        this.tailColour = tailColour;
+        this.tailColor = tailColor;
         this.tailLength = tailLength;
     }
 

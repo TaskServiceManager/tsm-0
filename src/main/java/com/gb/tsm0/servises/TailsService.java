@@ -27,8 +27,8 @@ public class TailsService {
             }
 
             tail.setOwner(tailDto.getOwner());
-            tail.setTailColour(tailDto.getTailColour());
-            tail.setTailLength(tail.getTailLength());
+            tail.setTailColor(tailDto.getTailColor());
+            tail.setTailLength(tailDto.getTailLength());
             tailsRepository.save(tail);
     }
 

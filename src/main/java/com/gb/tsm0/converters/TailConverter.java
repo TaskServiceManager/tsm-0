@@ -8,7 +8,7 @@ public class TailConverter {
         TailDto dto = new TailDto();
         dto.setId(entity.getId());
         dto.setOwner(entity.getOwner());
-        dto.setTailColour(entity.getTailColour());
+        dto.setTailColor(entity.getTailColor());
         dto.setTailLength(entity.getTailLength());
         return dto;
     }

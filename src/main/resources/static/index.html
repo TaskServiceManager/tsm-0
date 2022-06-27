@@ -12,7 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-route.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -21,44 +21,46 @@
     <h3>
         WELCOME - создай или обнови хвостик
     </h3>
-    <form novalidate>
+    <div id="AlertInAssign"></div>
+    <form novalidate ng-submit="create()">
         <input class="form-control" type="text" placeholder="id" ng-model="tailDetails.id">
         <p></p>
         <input class="form-control" type="text" placeholder="хозяин" ng-model="tailDetails.owner">
         <p></p>
-        <input class="form-control" type="text" placeholder="цвет" ng-model="tailDetails.tailColour">
+        <input class="form-control" type="text" placeholder="цвет" ng-model="tailDetails.tailColor">
         <p></p>
         <input class="form-control" type="text" placeholder="длинна" ng-model="tailDetails.tailLength">
         <p></p>
-
+        <button class="btn btn-primary" type="submit" >создать \ обновить</button>
     </form>
 
-    <button class="btn btn-primary" ng-click="create()" >создать \ обновить</button>
+
     <h4>
         Удали хвостик
     </h4>
-    <form novalidate>
+    <form novalidate ng-submit="cut()">
         <input class="form-control" type="text" placeholder="id" ng-model="cutDetails.id">
         <p></p>
 
-
+        <button class="btn btn-primary" type="submit" >удалить</button>
     </form>
 
-    <button class="btn btn-primary" ng-click="cut(cutDetails.id)" >удалить</button>
+
     <h3>
         В наличии :
     </h3>
     <table class="table table-hover">
         <tr>
             <td>ID</td>
-
-            <td></td>
+            <td>хозяин</td>
+            <td>цвет</td>
+            <td>длинна</td>
         </tr>
         <tbody>
         <tr ng-repeat="tail in MyTails">
             <td>{{tail.id}}</td>
             <td>{{tail.owner}}</td>
-            <td>{{tail.tailColour}}</td>
+            <td>{{tail.tailColor}}</td>
             <td>{{tail.tailLength}}</td>
 
 
