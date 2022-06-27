@@ -1,4 +1,4 @@
 package com.gb.tsm0.converters;
 
-public class ExampleConverter {
+public class EntityToDto {
 }

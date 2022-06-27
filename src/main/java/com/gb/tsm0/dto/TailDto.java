@@ -1,4 +1,4 @@
 package com.gb.tsm0.dto;
 
-public class ExampleDto {
+public class TailDto {
 }
