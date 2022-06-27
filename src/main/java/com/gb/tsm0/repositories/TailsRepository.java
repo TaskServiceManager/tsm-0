@@ -1,4 +1,7 @@
 package com.gb.tsm0.repositories;
 
-public interface TailsRepository {
+import com.gb.tsm0.entities.Tail;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TailsRepository extends JpaRepository<Tail, Long> {
 }
